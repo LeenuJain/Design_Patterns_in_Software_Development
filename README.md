@@ -1,4 +1,4 @@
-# Design Patterns in Software_Development
+# Design Patterns in Software Development
 
 ## Why do we need Design patterns
 Ever worked on a software project that turned into a tangled mess? Maybe adding a simple feature became a nightmare. Or perhaps the code was so confusing that nobody dared to touch it.
