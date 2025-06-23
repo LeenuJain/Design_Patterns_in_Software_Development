@@ -14,8 +14,8 @@ Design patterns have been around since the 1970s but gained popularity thanks to
 ## Benefits of Using Design Patterns
 - **Solve complex problems** by breaking them down into smaller, more manageable parts.
 - **Improve code readability and reusability**, making it easier for other developers to understand and use your code.
+- **Improve scalability**, A well-designed application can handle increasing workloads and new features without major rework. For example, using the Observer pattern can allow you to add new features that react to events, with minimal impact to the system. This saves time in the long run.
 - **Facilitate communication among developers**, as they provide a common language to describe solutions.
-- **improve scalability**, A well-designed application can handle increasing workloads and new features without major rework. For example, using the Observer pattern can allow you to add new features that react to events, with minimal impact to the system. This saves time in the long run.
 ## Categories of Design Patterns
 Design patterns are typically grouped into three main categories. These categories reflect the type of problem they solve:   
 - **Creational**: These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
