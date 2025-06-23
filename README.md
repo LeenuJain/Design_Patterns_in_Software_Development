@@ -11,6 +11,6 @@ A design pattern is a description or template for how to solve a problem that ca
 Unlike algorithms or data structures, design patterns aren't specific pieces of code. They are more like general guidelines for structuring your code. These patterns show how to arrange classes and objects to solve a design problem.
 ## Categories of Design Patterns
 Design patterns are typically grouped into three main categories. These categories reflect the type of problem they solve:   
-- Creational: These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
-- Structural: These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
-- Behavioral: These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
+- **Creational**: These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
+- **Structural**: These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
+- **Behavioral**: These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
