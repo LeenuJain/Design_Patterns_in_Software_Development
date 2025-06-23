@@ -14,3 +14,5 @@ Design patterns are typically grouped into three main categories. These categori
 - **Creational**: These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
 - **Structural**: These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
 - **Behavioral**: These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
+## History and evolution of design patterns
+Design patterns have been around since the 1970s but gained popularity thanks to the Gang of Four (GoF) book, which outlined 23 classic design patterns. These patterns have evolved and expanded over time, shaping the way developers approach software design and development.
