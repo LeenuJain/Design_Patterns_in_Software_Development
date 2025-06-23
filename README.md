@@ -21,6 +21,11 @@ Design patterns are typically grouped into three main categories. These categori
 - **Creational**: These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
 - **Structural**: These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
 - **Behavioral**: These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
+## When NOT to Use Design Patterns
+Not every problem requires a design pattern. Sometimes, simpler solutions are better. Overusing patterns can lead to over-engineering. This makes the code more complicated than it needs to be. Remember, the goal is to solve the problem. Keep the code simple and easy to understand.  
+## Conclusion
+Design patterns offer numerous benefits in software development. They improve code quality. Also, they reduce development time.   
+Understanding different types of design patterns is key. Pick the right one for the problem. Do it to make good code.  
 
 
 
