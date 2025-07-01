@@ -257,6 +257,7 @@ The **pizza store** is the **factory**, and the **pizza** is the **product**.
 
 ---
 
+      
 ## 🔹 Factory Method in Code (Python Example)
 
 ### 1. Building a **logistics system** that can deliver by **truck** or **ship**.
@@ -365,6 +366,7 @@ Sending SMS: Your order has been shipped!
 - You don’t need to change the client code if a new notification type is added.   
 - You avoid messy if-else or switch statements everywhere.   
 - You follow the Open/Closed Principle: open for extension, closed for modification.     
+
 
 # Abstract Factory Pattern
 
