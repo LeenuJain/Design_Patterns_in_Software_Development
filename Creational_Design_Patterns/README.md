@@ -225,3 +225,73 @@ Imagine a water tank in a building. If every apartment builds its own tank, it w
 
 # Factory Method Pattern
 
+## 🔹 What is the Factory Method Pattern?
+
+The **Factory Method Pattern** is a **creational design pattern** that provides an **interface for creating objects**, but **allows subclasses to alter the type of objects that will be created**.
+
+Instead of calling a constructor directly to create an object, you use a **factory method**. This helps in **decoupling the object creation logic** from the code that uses the object.
+
+---
+
+## 🔹 Real-Life Analogy
+
+Imagine a **pizza store**. You don’t make the pizza yourself — you just **order** it. The store decides **how** to make it based on the type you asked for (Margherita, Pepperoni, etc.).
+
+The **pizza store** is the **factory**, and the **pizza** is the **product**.
+
+---
+
+## 🔹 Why Use Factory Method?
+
+- To **encapsulate object creation logic**.
+- To **promote loose coupling** between client code and concrete classes.
+- To make code **easier to maintain and extend**.
+
+---
+
+## 🔹 Python Example
+
+Let’s say we’re building a **logistics system** that can deliver by **truck** or **ship**.
+
+### Step 1: Define the Product Interface
+
+```python
+class Transport:
+    def deliver(self):
+        pass
+``` 
+### Step 2 : Step 2: Create Concrete Products
+```python
+class Truck(Transport):
+    def deliver(self):
+        return "Delivering by land in a truck."
+
+class Ship(Transport):
+    def deliver(self):
+        return "Delivering by sea in a ship."
+```
+### Step 3 : Create the Factory
+```python
+class Logistics:
+    def create_transport(self):
+        pass
+
+class RoadLogistics(Logistics):
+    def create_transport(self):
+        return Truck()
+
+class SeaLogistics(Logistics):
+    def create_transport(self):
+        return Ship()
+```
+### Step 4 : Client Code
+```python
+def plan_delivery(logistics: Logistics):
+    transport = logistics.create_transport()
+    print(transport.deliver())
+
+# Usage
+plan_delivery(RoadLogistics())  # Output: Delivering by land in a truck.
+plan_delivery(SeaLogistics())   # Output: Delivering by sea in a ship.
+```
+
