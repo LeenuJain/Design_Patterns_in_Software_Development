@@ -296,7 +296,7 @@ plan_delivery(SeaLogistics())   # Output: Delivering by sea in a ship.
 ```
  
 ## 🔹 Key Points   
-The client code uses the **factory method**, not the **constructor**.   
-You can add new product types without changing the client code.   
-It follows the Open/Closed Principle — open for extension, closed for modification.     
+- The client code uses the **factory method**, not the **constructor**.   
+- You can add new product types without changing the client code.   
+- It follows the Open/Closed Principle — open for extension, closed for modification.     
 
