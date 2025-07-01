@@ -364,6 +364,7 @@ Sending SMS: Your order has been shipped!
 ### Why This is Useful   
 - You don’t need to change the client code if a new notification type is added.   
 - You avoid messy if-else or switch statements everywhere.   
-- You follow the Open/Closed Principle: open for extension, closed for modification.   
+- You follow the Open/Closed Principle: open for extension, closed for modification.     
 
+# Abstract Factory Pattern
 
