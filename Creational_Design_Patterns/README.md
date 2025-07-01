@@ -38,10 +38,10 @@ obj2 = Singleton()
 print(obj1 is obj2)  # True
 
 ```
-Output:
-Creating new instance...
-True
-Even though we tried to create two objects, both obj1 and obj2 point to the same instance.
+Output:   
+Creating new instance...    
+True   
+Even though we tried to create two objects, both obj1 and obj2 point to the same instance.   
 
 ---
 
