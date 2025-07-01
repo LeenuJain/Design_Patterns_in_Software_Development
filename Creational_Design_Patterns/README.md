@@ -45,7 +45,7 @@ True
    
 Even though we tried to create two objects, both obj1 and obj2 point to the same instance.   
    
-### 2. **database connection** example:   
+### 2. Database connection example:   
 ```python
 import sqlite3
 
