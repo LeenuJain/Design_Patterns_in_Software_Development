@@ -244,7 +244,7 @@ The **pizza store** is the **factory**, and the **pizza** is the **product**.
 ## 🔹 Why Use Factory Method?
 **1. Encapsulation of Object Creation**
    - You hide the logic of how objects are created.
-   - The client code doesn’t need to know the exact class name or how to instantiate it.   
+   - The client code doesn’t need to know the exact class name or how to instantiate it.
 **2. Loose Coupling**
    - The client code depends on an interface or abstract class, not on specific implementations.
    - This makes your code easier to change or extend.   
