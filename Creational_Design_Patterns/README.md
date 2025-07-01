@@ -249,7 +249,7 @@ The **pizza store** is the **factory**, and the **pizza** is the **product**.
 
 ---
 
-## 🔹 Python Example
+## 🔹 Factory Method in Code (Python Example)
 
 ### 1. Let’s say we’re building a **logistics system** that can deliver by **truck** or **ship**.
 
@@ -298,6 +298,7 @@ plan_delivery(SeaLogistics())   # Output: Delivering by sea in a ship.
 - The client code uses the **factory method**, not the **constructor**.   
 - You can add new product types without changing the client code.   
 - It follows the Open/Closed Principle — open for extension, closed for modification.    
+
 
 ### 2.  building a Notification System. Depending on the user's preference, the system should send a notification via Email, SMS, or Push Notification.   
 Now, instead of writing if-else everywhere to decide which notification to send, we use the Factory Method Pattern to make the code clean, flexible, and easy to extend.
