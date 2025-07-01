@@ -37,17 +37,20 @@ obj2 = Singleton()
 
 print(obj1 is obj2)  # True
 
-Output:
+```
+
+## Output:
 Creating new instance...
 True
 Even though we tried to create two objects, both obj1 and obj2 point to the same instance.
 
-🔹 Key Points
+---
+
+## 🔹 Key Points
 The constructor is private or controlled.
 A static method or class method is used to get the instance.
 Only one object is created and reused.
 
 ---
 
-Would you like me to save this as a downloadable file for you?
 
