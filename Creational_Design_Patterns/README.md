@@ -174,12 +174,12 @@ db2 object ID: 140362541235680
 Are all objects the same? True
 
 ```
-**What's Happening**
+**What's Happening**   
 The first time DatabaseManager() is called in register_user(), a new instance is created  
 Every subsequent call to DatabaseManager() returns that same instance   
 All the object IDs are identical because they are the same object in memory 
 
-**Note** 
+**Note**    
 There are several ways to implement the Singleton Design Pattern, depending on the programming language and specific requirements like thread safety, lazy initialization, and performance.  
 Foucusing on python above example we were using __new__ Method. we can also achieve using decorator, metaclass, module etc.
 
