@@ -9,6 +9,11 @@ Think of it like a **manager** in a company — there should be only **one manag
 
 ---
 
+## 🔹 Real-World Analogy
+Imagine a water tank in a building. If every apartment builds its own tank, it wastes space, money, and water pressure. Instead, having one shared tank is efficient and manageable — just like a singleton database connection.   
+
+---
+
 ## 🔹 Why Use Singleton?
 
 - To **control access** to shared resources (like a database or a file).
@@ -208,11 +213,6 @@ Using a Singleton ensures that:
 ✅ It’s efficient — saves memory and CPU.  
 ✅ It’s safe — avoids hitting connection limits.  
 ✅ It’s consistent — all parts of the app use the same connection.  
-
----
-
-## 🔹 Real-World Analogy
-Imagine a water tank in a building. If every apartment builds its own tank, it wastes space, money, and water pressure. Instead, having one shared tank is efficient and manageable — just like a singleton database connection.   
 
 ---
 
