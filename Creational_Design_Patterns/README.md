@@ -14,6 +14,7 @@ Think of it like a **manager** in a company — there should be only **one manag
 - To **control access** to shared resources (like a database or a file).
 - To **save memory** by avoiding multiple instances.
 - To ensure **consistent behavior** across the application.
+- Use case : a logging system, configuration manager, or connection pool is often implemented using Singleton.
 
 ---
 
@@ -42,6 +43,137 @@ Output:
 Creating new instance...    
 True   
 Even though we tried to create two objects, both obj1 and obj2 point to the same instance.   
+
+
+### Now let's see simplified database connection singleton example :
+```python
+import sqlite3
+
+class DatabaseManager:
+    # Class variable to hold our single instance
+    _instance = None
+    
+    def __new__(cls):
+        # If we don't have an instance yet, create one
+        if cls._instance is None:
+            print("Creating a new DatabaseManager instance")
+            # Create the instance using the parent class's __new__
+            cls._instance = super().__new__(cls)
+            # Initialize the connection to None
+            cls._instance.connection = None
+        return cls._instance
+    
+    def connect(self):
+        """Connect to the database if not already connected"""
+        if self.connection is None:
+            print("Creating a new database connection")
+            self.connection = sqlite3.connect("example.db")
+            # Create a cursor for executing SQL commands
+            cursor = self.connection.cursor()
+            # Create a table if it doesn't exist
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS users (
+                    id INTEGER PRIMARY KEY,
+                    name TEXT,
+                    email TEXT
+                )
+            ''')
+            self.connection.commit()
+        return self.connection
+    
+    def add_user(self, name, email):
+        """Add a user to the database"""
+        conn = self.connect()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO users (name, email) VALUES (?, ?)", (name, email))
+        conn.commit()
+        print(f"Added user: {name} with email: {email}")
+    
+    def get_all_users(self):
+        """Get all users from the database"""
+        conn = self.connect()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users")
+        return cursor.fetchall()
+    
+    def close(self):
+        """Close the database connection"""
+        if self.connection:
+            self.connection.close()
+            self.connection = None
+            print("Database connection closed")
+```
+
+**Usage**
+```python
+def register_user(name, email):
+    print("\n--- Registering User ---")
+    db = DatabaseManager()
+    print(f"In register_user(), db object ID: {id(db)}")
+    db.add_user(name, email)
+
+def list_all_users():
+    print("\n--- Listing All Users ---")
+    db = DatabaseManager()
+    print(f"In list_all_users(), db object ID: {id(db)}")
+    users = db.get_all_users()
+    print(f"Found {len(users)} users")
+
+def shutdown_app():
+    print("\n--- Shutting Down App ---")
+    db = DatabaseManager()
+    print(f"In shutdown_app(), db object ID: {id(db)}")
+    db.close()
+
+# Let's demonstrate
+if __name__ == "__main__":
+    register_user("Alice", "<EMAIL_ADDRESS>")
+    register_user("Bob", "<EMAIL_ADDRESS>")
+    list_all_users()
+    shutdown_app()
+    
+    db1 = DatabaseManager()
+    print(f"db1 object ID: {id(db1)}")
+    
+    db2 = DatabaseManager()
+    print(f"db2 object ID: {id(db2)}")
+    
+    print(f"Are all objects the same? {id(db1) == id(db2)}")
+
+```
+**Output**
+```python
+--- Registering User ---
+Creating a new DatabaseManager instance
+Instance ID: 140362541235680
+In register_user(), db object ID: 140362541235680
+Creating a new database connection
+Added user: Alice with email: <EMAIL_ADDRESS>
+
+--- Registering User ---
+Reusing existing instance with ID: 140362541235680
+In register_user(), db object ID: 140362541235680
+Added user: Bob with email: <EMAIL_ADDRESS>
+
+--- Listing All Users ---
+Reusing existing instance with ID: 140362541235680
+In list_all_users(), db object ID: 140362541235680
+Found 2 users
+
+--- Shutting Down App ---
+Reusing existing instance with ID: 140362541235680
+In shutdown_app(), db object ID: 140362541235680
+Database connection closed
+
+Reusing existing instance with ID: 140362541235680
+db1 object ID: 140362541235680
+
+Reusing existing instance with ID: 140362541235680
+db2 object ID: 140362541235680
+
+Are all objects the same? True
+
+```
 
 ---
 
