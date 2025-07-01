@@ -180,13 +180,13 @@ Are all objects the same? True
 
 ```
 **What's Happening**   
-The first time DatabaseManager() is called in register_user(), a new instance is created  
-Every subsequent call to DatabaseManager() returns that same instance   
-All the object IDs are identical because they are the same object in memory 
+- The first time DatabaseManager() is called in register_user(), a new instance is created  
+- Every subsequent call to DatabaseManager() returns that same instance   
+- All the object IDs are identical because they are the same object in memory 
 
 **Note**    
-There are several ways to implement the Singleton Design Pattern, depending on the programming language and specific requirements like thread safety, lazy initialization, and performance.  
-Foucusing on python above example we were using __new__ Method. we can also achieve using decorator, metaclass, module etc.
+- There are several ways to implement the Singleton Design Pattern, depending on the programming language and specific requirements like thread safety, lazy initialization, and performance.  
+- Foucusing on python above example we were using __new__ Method. we can also achieve using decorator, metaclass, module etc.
 
 ---
 
@@ -251,7 +251,7 @@ The **pizza store** is the **factory**, and the **pizza** is the **product**.
 
 ## 🔹 Factory Method in Code (Python Example)
 
-### 1. Let’s say we’re building a **logistics system** that can deliver by **truck** or **ship**.
+### 1. Building a **logistics system** that can deliver by **truck** or **ship**.
 
 ### Step 1: Define the Product Interface
 
@@ -300,8 +300,9 @@ plan_delivery(SeaLogistics())   # Output: Delivering by sea in a ship.
 - It follows the Open/Closed Principle — open for extension, closed for modification.    
 
 
-### 2.  building a Notification System. Depending on the user's preference, the system should send a notification via Email, SMS, or Push Notification.   
-Now, instead of writing if-else everywhere to decide which notification to send, we use the Factory Method Pattern to make the code clean, flexible, and easy to extend.
+### 2.  Building a Notification System. 
+- Depending on the user's preference, the system should send a notification via Email, SMS, or Push Notification.    
+- Now, instead of writing if-else everywhere to decide which notification to send, we use the Factory Method Pattern to make the code clean, flexible, and easy to extend.   
 
 ### Step 1: Create a Common Interface   
 All notification types should have a common method, like notify().   
