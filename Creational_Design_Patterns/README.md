@@ -195,7 +195,7 @@ If you create multiple instances of a database connection object, several proble
 **1. Resource Overload**     
 Each database connection consumes memory, CPU, and network resources.      
 Creating many connections can overload the database server, leading to slower performance or even crashes.   
-**2. Inconsistent Data**   
+**2. Inconsistent Data**     
 If different parts of your application use different connections, they might not see the same data at the same time.   
 For example, one connection might not see changes made by another until a transaction is committed.   
 **3. Connection Limits**       
