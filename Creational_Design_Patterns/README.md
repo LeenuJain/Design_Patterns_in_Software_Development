@@ -251,7 +251,7 @@ The **pizza store** is the **factory**, and the **pizza** is the **product**.
 
 ## 🔹 Python Example
 
-Let’s say we’re building a **logistics system** that can deliver by **truck** or **ship**.
+### 1. Let’s say we’re building a **logistics system** that can deliver by **truck** or **ship**.
 
 ### Step 1: Define the Product Interface
 
@@ -294,9 +294,66 @@ def plan_delivery(logistics: Logistics):
 plan_delivery(RoadLogistics())  # Output: Delivering by land in a truck.
 plan_delivery(SeaLogistics())   # Output: Delivering by sea in a ship.
 ```
- 
-## 🔹 Key Points   
+### Why This is Useful
 - The client code uses the **factory method**, not the **constructor**.   
 - You can add new product types without changing the client code.   
-- It follows the Open/Closed Principle — open for extension, closed for modification.     
+- It follows the Open/Closed Principle — open for extension, closed for modification.    
+
+### 2.  building a Notification System. Depending on the user's preference, the system should send a notification via Email, SMS, or Push Notification.   
+Now, instead of writing if-else everywhere to decide which notification to send, we use the Factory Method Pattern to make the code clean, flexible, and easy to extend.
+
+### Step 1: Create a Common Interface   
+All notification types should have a common method, like notify().   
+```python
+class Notification:
+    def notify(self, message):
+        pass
+```
+### Step 2: Create Concrete Classes   
+Each class implements the notify() method in its own way.   
+```python
+class EmailNotification(Notification):
+    def notify(self, message):
+        print(f"Sending Email: {message}")
+
+class SMSNotification(Notification):
+    def notify(self, message):
+        print(f"Sending SMS: {message}")
+
+class PushNotification(Notification):
+    def notify(self, message):
+        print(f"Sending Push Notification: {message}")
+```
+### Step 3: Create the Factory   
+This factory decides which notification object to create.  
+```python
+class NotificationFactory:
+    def create_notification(self, channel):
+        if channel == "email":
+            return EmailNotification()
+        elif channel == "sms":
+            return SMSNotification()
+        elif channel == "push":
+            return PushNotification()
+        else:
+            raise ValueError("Unknown notification channel")
+```
+### Step 4: Client Code (You Use the Factory)
+```python
+# Client code
+factory = NotificationFactory()
+
+# Let's say user wants SMS
+user_preference = "sms"
+notifier = factory.create_notification(user_preference)
+notifier.notify("Your order has been shipped!")
+```
+**Output:**
+Sending SMS: Your order has been shipped!
+
+### Why This is Useful   
+- You don’t need to change the client code if a new notification type is added.   
+- You avoid messy if-else or switch statements everywhere.   
+- You follow the Open/Closed Principle: open for extension, closed for modification.   
+
 
