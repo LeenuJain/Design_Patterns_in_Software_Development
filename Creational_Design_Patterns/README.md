@@ -20,7 +20,7 @@ Think of it like a **manager** in a company — there should be only **one manag
 
 ## 🔹 Singleton in Code (Python Example)
 
-1.Here’s a simple Python example:
+### 1. Simple example:
 
 ```python
 class Singleton:
@@ -45,7 +45,7 @@ True
    
 Even though we tried to create two objects, both obj1 and obj2 point to the same instance.   
    
-2.Now let's see **database connection** example following singleton:   
+### 2. **database connection** example:   
 ```python
 import sqlite3
 
