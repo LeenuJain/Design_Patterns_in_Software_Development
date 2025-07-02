@@ -405,10 +405,8 @@ Getting address for coordinates (37.7749, -122.4194) using OpenStreetMap API
 Coordinates: (37.7749, -122.4194)
 Address: 123 Example St, San Francisco, CA
 ```
-
----
-
-### Benefits for Location Services
+   
+**Benefits for Location Services**
 - **API Independence**: Your application isn't tied to a specific location service provider.   
 - **Easy to Switch Providers**: If Google Maps changes pricing or you want to use a different service, you can switch by creating a new concrete implementation.  
 - **Testing Simplified**: You can create mock location services for testing.  
@@ -417,7 +415,7 @@ Address: 123 Example St, San Francisco, CA
 
 ---
 
-### Real-World Applications
+## 🔹 Real-World Applications
 - Multi-provider support: Allow users to choose their preferred mapping service  
 - Fallback mechanisms: If one location service is down, automatically switch to another  
 - Regional optimization: Use different services based on geographic region for better accuracy  
@@ -425,5 +423,5 @@ Address: 123 Example St, San Francisco, CA
 
 ---  
 
-# Abstract Factory Pattern
+# 🔹 Abstract Factory Pattern
 
