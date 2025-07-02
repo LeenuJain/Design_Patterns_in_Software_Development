@@ -49,7 +49,9 @@ Creating new instance...
 True
    
 Even though we tried to create two objects, both obj1 and obj2 point to the same instance.   
-   
+
+---
+
 ### 2. Database connection example:   
 ```python
 import sqlite3
@@ -272,7 +274,7 @@ class Transport:
     def deliver(self):
         pass
 ``` 
-### Step 2 : Step 2: Create Concrete Products
+**Step 2 : Step 2: Create Concrete Products**
 ```python
 class Truck(Transport):
     def deliver(self):
@@ -282,7 +284,7 @@ class Ship(Transport):
     def deliver(self):
         return "Delivering by sea in a ship."
 ```
-### Step 3 : Create the Factory
+**Step 3 : Create the Factory**
 ```python
 class Logistics:
     def create_transport(self):
@@ -296,7 +298,7 @@ class SeaLogistics(Logistics):
     def create_transport(self):
         return Ship()
 ```
-### Step 4 : Client Code
+**Step 4 : Client Code**
 ```python
 def plan_delivery(logistics: Logistics):
     transport = logistics.create_transport()
@@ -311,6 +313,8 @@ plan_delivery(SeaLogistics())   # Output: Delivering by sea in a ship.
 - The client code uses the **factory method**, not the **constructor**.   
 - You can add new product types without changing the client code.   
 - It follows the Open/Closed Principle — open for extension, closed for modification.     
+
+---
 
 ### 2. Location services
 A real-world implementation of the Factory Method pattern for location services, allowing seamless switching between different mapping providers.
