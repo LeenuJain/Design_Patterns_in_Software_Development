@@ -642,7 +642,7 @@ Which in turn provide:
 
 ---
 
-![My Image](Factory_method_&_Abstract_factory.png)
+![My Image](Images/Factory_method_&_Abstract_factory.png)
 
 ---
 
