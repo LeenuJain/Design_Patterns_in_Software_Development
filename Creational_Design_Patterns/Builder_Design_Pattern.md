@@ -10,7 +10,9 @@ The **Builder Pattern** is used to construct **complex objects step-by-step**.
 ## 🧠 Real-World Analogy: Ordering Pizza 🍕
 
 Imagine you’re ordering a custom pizza:
+Go to a pizzeria 🍕 and are given only one option to order a pizza: you have to specify everything in one go — the type of crust, the size, the sauce, the toppings, and the extras. If you miss or incorrectly specify something, the pizza 🍕 might not turn out the way you want, and you’d have to redo the entire process from scratch. This is like using a constructor with many parameters — it’s error-prone and difficult to manage, especially when there are many options or optional items.
 
+Now, think of a more flexible approach where the pizza maker asks you step by step for your preferences:  
 1. Choose the **size** (small, medium, large)  
 2. Choose the **crust** (thin, thick)  
 3. Add **toppings** (cheese, mushrooms, olives)  
@@ -40,34 +42,6 @@ You make choices step-by-step — the pizza is built progressively.
 
 ---
 
-## 🔄 Why Use Builder?
-
-| Problem                             | Builder Helps By                      |
-|-------------------------------------|----------------------------------------|
-| Too many constructor parameters     | Step-by-step building methods          |
-| Need to configure only some fields  | Skip unnecessary steps                 |
-| Want more readable construction     | Fluent and expressive method chaining  |
-| Complex object initialization logic | Keeps logic separated from the object  |
-
----
-
-## 📌 Benefits
-
-- ✅ Clean and readable object creation  
-- ✅ Avoids huge messy constructors  
-- ✅ Supports optional and required fields  
-- ✅ Works well with complex objects  
-- ✅ Promotes immutability (if used wisely)
-
----
-
-## ❗ When NOT to Use
-
-- Object is simple and doesn't need customization  
-- Only a few attributes are needed  
-- Constructor alone is enough
-
----
 ## Example in python
 Lets consider again an exmaple to create and customize GUI components like a Button.  
 ```python
@@ -166,6 +140,19 @@ if __name__ == "__main__":
     )
 ```
 
+**Output(when os_type = "Mac"):**
+```Python
+🌐 OS Type: Mac
+
+🔧 create_and_display_button() called
+→ Creating button using factory...
+🏭 Factory: Creating MacButton
+✔ Got button of type: MacButton
+→ Customizing button using builder...
+→ Finally displaying the customized button:
+[Mac] Displaying a small square button in green with text 'Cancel'
+```
+
 ### 🔍 What This Code Does
 
 - `Button` is the base class with default styles and a `display()` method.
@@ -182,6 +169,36 @@ if __name__ == "__main__":
 
 This example demonstrates how the Builder Pattern and Factory Method Pattern can be used together to create and customize GUI components like a Button.    
 - The Factory Method Pattern helps determine which type of button to create (WindowsButton or MacButton) based on the platform.   
-- The Builder Pattern allows the client to customize the button's attributes like color, size, shape, and text step-by-step in a clean and flexible way.  
+- The Builder Pattern allows the client to customize the button's attributes like color, size, shape, and text step-by-step in a clean and flexible way.
 
 ---
+
+## 🔄 Why Use Builder?
+
+| Problem                             | Builder Helps By                      |
+|-------------------------------------|----------------------------------------|
+| Too many constructor parameters     | Step-by-step building methods          |
+| Need to configure only some fields  | Skip unnecessary steps                 |
+| Want more readable construction     | Fluent and expressive method chaining  |
+| Complex object initialization logic | Keeps logic separated from the object  |
+
+---
+
+## 📌 Benefits
+
+- ✅ Clean and readable object creation  
+- ✅ Avoids huge messy constructors  
+- ✅ Supports optional and required fields  
+- ✅ Works well with complex objects  
+- ✅ Promotes immutability (if used wisely)
+
+---
+
+## ❗ When NOT to Use
+
+- Object is simple and doesn't need customization  
+- Only a few attributes are needed  
+- Constructor alone is enough
+
+---
+
