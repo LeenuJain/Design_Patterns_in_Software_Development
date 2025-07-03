@@ -1,5 +1,5 @@
 
-## ❓ What is the Prototype Pattern?
+## 🔹 What is the Prototype Pattern?
 
 The **Prototype Pattern** is used when you want to create a **copy (clone)** of an existing object instead of building it from scratch.
 
@@ -10,16 +10,7 @@ This is especially useful when:
 
 ---
 
-## 🧠 Real-World Analogy
-
-### 🧸 Example: Making Toy Models
-
-Imagine a toy company makes a prototype of a new toy car.  
-Instead of designing each new car from scratch, they just **clone the prototype** and slightly modify the copies (color, wheels, etc.).
-
----
-
-## 🔁 Key Idea
+## 🔹 Key Idea
 
 - Instead of calling `new`, we call `.clone()`
 - We **copy an existing object** instead of creating a fresh one
@@ -36,9 +27,9 @@ Instead of designing each new car from scratch, they just **clone the prototype*
 
 ---
 
-## 🚗 Real-Time Analogy (Automobile Example)
+## 🔹Real-Time Analogy 
 
-### 🏎️ Example 1: Car Manufacturing Molds
+#### Example 1: Car Manufacturing Molds
 
 In automobile factories, once a prototype car body is designed and finalized, a **mold** is created.  
 Rather than designing and welding a new car body each time from scratch, the company **clones** that body using the mold.
@@ -47,7 +38,7 @@ This saves time and cost while allowing **custom variations** like paint color, 
 
 **Prototype Pattern = Using a car body mol**
 
-### Example 2: Making an ID Card
+#### Example 2: Making an ID Card
 You don’t print and cut a new card every time from scratch.
 You just photocopy a template and change name/photo.
 
@@ -56,9 +47,9 @@ You just photocopy a template and change name/photo.
 
 ---
 
-## 🔹 Singleton in Code (Python Example)
+## 🔹 Prototype in Code (Python Example)
 
-### 1. Simple example:
+#### 1. Simple example:
 ```python
 import copy
 
@@ -115,7 +106,7 @@ Author : Admin
 Content: This is a template
 ```
 
-### 🧠 What Happened?
+####  What Happened?
 
 - We created a `Document` instance → `template_doc`
 - We called `.clone()` → got a deep copy
