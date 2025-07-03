@@ -116,4 +116,22 @@ This is the **Prototype Pattern** in action.
 
 ---
 
+### 🔹 Summary of Benefits
+
+| What You Save       | Why It Matters                                                              |
+|---------------------|------------------------------------------------------------------------------|
+| 🧠 Code complexity   | You avoid rebuilding and reconfiguring complex objects                      |
+| 🕓 Time              | Much faster than constructing from scratch (esp. for heavy objects)         |
+| 🎯 Consistency       | Ensures base object is already validated and well-formed                    |
+| 🔁 Reuse             | Easily create many similar variations                                       |
+
+---
+
+### 🔹 When to Use Prototype
+
+- When object construction is **expensive**
+- When you want to **duplicate existing objects** with small changes
+- When your object has **many optional attributes** or **deeply nested parts**
+
+---
 
