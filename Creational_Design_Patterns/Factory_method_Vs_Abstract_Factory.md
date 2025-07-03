@@ -1,28 +1,4 @@
-# Factory Method Pattern Vs Abstract Factory Pattern 
-
----
-
-## 🧠 When to Use Which Pattern?
-
-### ✅ Use **Factory Method** when:
-- You need to create **one product**.
-- **Subclasses** decide what concrete class to instantiate.
-
-### ✅ Use **Abstract Factory** when:
-- You need to create **multiple related products** (like `Button` + `Checkbox`).
-- You want to ensure they are used **together consistently** (e.g., both follow Windows or Mac style).
-
----
-
-## 🧠 Real-World Use Case: GUI Elements
-
-Imagine your app supports two operating systems: **Windows** and **Mac**.
-
-You want to create **Buttons** and **Checkboxes** that behave differently based on the OS.
-
----
-
-## ✅ 1. Factory Method Pattern
+# ✅ 1. Factory Method Pattern
 
 This focuses on creating just **one product** using a factory method — in this case, a `Button`.
 
@@ -89,7 +65,7 @@ Here, you're just creating **one type of product** (`Button`) using a **factory 
 
 ---
 
-## 🧩 2. Abstract Factory Pattern
+# 🧩 2. Abstract Factory Pattern
 
 This is used when you want to create **families of related products** — like both `Button` and `Checkbox` — that should work together consistently.
 
@@ -193,6 +169,29 @@ Here, you're creating a **family of products** (`Button` + `Checkbox`) that are 
 
 ---
 
+# Factory Method Pattern Vs Abstract Factory Pattern 
+
+---
+
+## 🧠 When to Use Which Pattern?
+
+### ✅ Use **Factory Method** when:
+- You need to create **one product**.
+- **Subclasses** decide what concrete class to instantiate.
+
+### ✅ Use **Abstract Factory** when:
+- You need to create **multiple related products** (like `Button` + `Checkbox`).
+- You want to ensure they are used **together consistently** (e.g., both follow Windows or Mac style).
+
+---
+
+## 🧠 Real-World Use Case: GUI Elements
+
+Imagine your app supports two operating systems: **Windows** and **Mac**.
+
+You want to create **Buttons** and **Checkboxes** that behave differently based on the OS.
+
+---
     
 # 🧠 What Happens When You Use Factory Method for Multiple Related Products?
 
