@@ -193,7 +193,8 @@ Here, you're creating a **family of products** (`Button` + `Checkbox`) that are 
 
 ---
 
-## 🧠 What Happens When You Use Factory Method for Multiple Related Products?
+    
+# 🧠 What Happens When You Use Factory Method for Multiple Related Products?
 
 Now let's understand what happens if we use the **Factory Method** when we have **more than one related product**.  
 We’ll continue with the same GUI example involving `Button`, `Checkbox`, and `TextField` elements.
@@ -392,16 +393,17 @@ which breaks **UI consistency** — this is exactly where the **Abstract Factory
 
 ---
 
-## 🍽️ Extended Real-World Scenario: Combining Multiple Related Product Families
+
+        
+# Combining Multiple Related Product Families
 
 Now that we understand the difference between **Factory Method** and **Abstract Factory**,  
 let’s dive a bit deeper and explore what happens when we have a **combination of related and unrelated objects**.
 
 ---
 
-## 🍽️ Your Updated Scenario
-
-You're hosting a guest for dinner. Here’s the breakdown:
+### Guets menu as an Exmaple
+You're hosting a dinner for guest. Here’s the breakdown:
 
 ### 🧁 Dessert
 
