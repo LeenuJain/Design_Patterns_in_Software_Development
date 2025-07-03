@@ -644,9 +644,6 @@ Which in turn provide:
 
 ![My Image](Factory_method_&_Abstract_factory.png)
 
-🎉 You’ve now understood one of the **most advanced and practical applications** of design patterns —  
-using real-world, relatable scenarios to master both **Factory Method** and **Abstract Factory** concepts. 👏
-
 ---
 
 
