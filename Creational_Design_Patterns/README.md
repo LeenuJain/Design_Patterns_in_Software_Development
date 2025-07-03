@@ -17,7 +17,7 @@ There are **five main types**:
 
 | Pattern              | Purpose                                                                 | Example Use Case                          | Notes Link                                |
 |----------------------|-------------------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
-| **1. Singleton**      | Ensures a class has only one instance, and provides global access to it | Database connection, logger                | [View Notes](Singleton_Design_pattern.md)  |
+| **1. Singleton**      | Ensures a class has only one instance, and provides global access to it | Database connection, logger                | [View Notes](Singleton_Design_Pattern.md)  |
 | **2. Factory Method** | Lets subclasses decide which class to instantiate                       | GUI buttons for different OS               | [View Notes](Factory_Method_&_Abstract_Factory.md) |
 | **3. Abstract Factory** | Creates families of related objects without specifying concrete classes | UI themes, cross-platform UI kits          | [View Notes](Factory_Method_&_Abstract_Factory.md) |
 | **4. Builder**         | Separates complex object construction from its representation           | Building a house or creating an HTML page  | [View Notes](Builder_Design_pattern.md)    |
