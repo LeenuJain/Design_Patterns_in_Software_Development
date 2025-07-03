@@ -15,10 +15,11 @@ They help:
 There are **five main types**:  
 ![Creational Design Patterns](Images/Creational_Design_Patterns.webp)  
 
-| Pattern             | Purpose                                                                 | Example Use Case                          |
-|---------------------|-------------------------------------------------------------------------|--------------------------------------------|
-| **1. Singleton**     | Ensures a class has only one instance, and provides global access to it | Database connection, logger                |
-| **2. Factory Method**| Lets subclasses decide which class to instantiate                       | GUI buttons for different OS               |
-| **3. Abstract Factory** | Creates families of related objects without specifying concrete classes | UI themes, cross-platform UI kits          |
-| **4. Builder**        | Separates complex object construction from its representation           | Building a house or creating an HTML page  |
-| **5. Prototype**      | Creates new objects by copying an existing object (clone)               | Copying game characters, settings profiles |
+| Pattern              | Purpose                                                                 | Example Use Case                          | Notes Link                                |
+|----------------------|-------------------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
+| **1. Singleton**      | Ensures a class has only one instance, and provides global access to it | Database connection, logger                | [View Notes](Singleton_design_pattern.md)  |
+| **2. Factory Method** | Lets subclasses decide which class to instantiate                       | GUI buttons for different OS               | [View Notes](Factory_method_&_Abstract_Factory.md) |
+| **3. Abstract Factory** | Creates families of related objects without specifying concrete classes | UI themes, cross-platform UI kits          | [View Notes](Factory_method_&_Abstract_Factory.md) |
+| **4. Builder**         | Separates complex object construction from its representation           | Building a house or creating an HTML page  | [View Notes](Builder_design_pattern.md)    |
+| **5. Prototype**       | Creates new objects by copying an existing object (clone)               | Copying game characters, settings profiles | [View Notes](Prototype_design_pattern.md)  |
+
