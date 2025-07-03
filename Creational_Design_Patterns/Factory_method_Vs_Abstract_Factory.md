@@ -389,12 +389,8 @@ And the **client must know** which factory to call for each type.
 which breaks **UI consistency** — this is exactly where the **Abstract Factory** pattern shines.
 
 ---
-
-
----
-
-
-        
+     
+           
 # Combining Multiple Related Product Families
 
 Now that we understand the difference between **Factory Method** and **Abstract Factory**,  
