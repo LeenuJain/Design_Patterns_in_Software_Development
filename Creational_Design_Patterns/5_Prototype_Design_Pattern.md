@@ -17,7 +17,7 @@ This is especially useful when:
 
 ---
 
-## 🧩 Components in Prototype Pattern
+## 🔹 Components in Prototype Pattern
 
 | **Concept**        | **Description**                                      |
 |--------------------|------------------------------------------------------|
