@@ -116,7 +116,7 @@ This is the **Prototype Pattern** in action.
 
 ---
 
-### 🔹 Summary of Benefits
+## 🔹 Summary of Benefits
 
 | What You Save       | Why It Matters                                                              |
 |---------------------|------------------------------------------------------------------------------|
@@ -127,7 +127,7 @@ This is the **Prototype Pattern** in action.
 
 ---
 
-### 🔹 When to Use Prototype
+## 🔹 When to Use Prototype
 
 - When object construction is **expensive**
 - When you want to **duplicate existing objects** with small changes
