@@ -47,6 +47,9 @@ There are **five main types**:
 
 #### **2.Structural Design Patterns**: 
 These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
+**Types of Structural Design Patterns**
+There are **seven main types**:  
+![Creational Design Patterns](IMAGES/Structural_Images/Structural_Design_Patterns.webp)  
 
 ---
 
