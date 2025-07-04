@@ -21,9 +21,32 @@ Design patterns have been around since the 1970s but gained popularity thanks to
 - **Improve scalability**, A well-designed application can handle increasing workloads and new features without major rework. For example, using the Observer pattern can allow you to add new features that react to events, with minimal impact to the system. This saves time in the long run.
   
 ## 🔹Categories of Design Patterns
-Design patterns are typically grouped into three main categories. These categories reflect the type of problem they solve:   
-- **Creational**: These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
-- **Structural**: These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
+Design patterns are typically grouped into three main categories. These categories reflect the type of problem they solve:    
+
+#### **1. Creational Design Pattern:**  
+
+These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
+They help:
+- Hide the **creation logic**
+- Increase **flexibility** and **reuse**
+- Avoid **tight coupling** between classes and the objects they create
+  
+**Types of Creational Design Patterns**
+There are **five main types**:  
+![Creational Design Patterns](Images/Creational_Design_Patterns.webp)  
+
+| Pattern              | Purpose                                                                 | Example Use Case                          | Notes Link                                |
+|----------------------|-------------------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
+| **1. Singleton**      | Ensures a class has only one instance, and provides global access to it | Database connection, logger                | [View Notes](Creational_Design_Patterns/1_Singleton_Design_Pattern.md)  |
+| **2. Factory Method** | Lets subclasses decide which class to instantiate                       | GUI buttons for different OS               | [View Notes](2_3_Factory_Method_&_Abstract_Factory.md) |
+| **3. Abstract Factory** | Creates families of related objects without specifying concrete classes | UI themes, cross-platform UI kits          | [View Notes](2_3_Factory_Method_&_Abstract_Factory.md) |
+| **4. Builder**         | Separates complex object construction from its representation           | Building a house or creating an HTML page  | [View Notes](4_Builder_Design_Pattern.md)    |
+| **5. Prototype**       | Creates new objects by copying an existing object (clone)               | Copying game characters, settings profiles | [View Notes](5_Prototype_Design_Pattern.md)  |
+
+---
+
+#### **2.Structural Design Pattern**: 
+These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
 - **Behavioral**: These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
   
 ## 🔹Best Practices for Implementing Design Patterns
