@@ -423,5 +423,3 @@ Address: 123 Example St, San Francisco, CA
 
 ---  
 
-# 🔹 Abstract Factory Pattern
-
