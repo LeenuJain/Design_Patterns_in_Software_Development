@@ -47,7 +47,11 @@ There are **five main types**:
 
 #### **2.Structural Design Pattern**: 
 These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
-- **Behavioral**: These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
+
+---
+
+#### **3.Behavioral Design Pattern**: 
+These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
   
 ## 🔹Best Practices for Implementing Design Patterns
 - **Understand the Problem Before Applying a Pattern** : It’s tempting to see a cool design pattern and want to use it everywhere. But first, take a step back and truly understand the problem you’re trying to solve. Choose a design pattern that fits the specific problem at hand.
