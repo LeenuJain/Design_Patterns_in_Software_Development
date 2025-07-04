@@ -23,7 +23,7 @@ Design patterns have been around since the 1970s but gained popularity thanks to
 ## 🔹Categories of Design Patterns
 Design patterns are typically grouped into three main categories. These categories reflect the type of problem they solve:    
 
-#### **1. Creational Design Pattern:**  
+#### **1. Creational Design Patterns:**  
 
 These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
 They help:
@@ -45,12 +45,12 @@ There are **five main types**:
 
 ---
 
-#### **2.Structural Design Pattern**: 
+#### **2.Structural Design Patterns**: 
 These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
 
 ---
 
-#### **3.Behavioral Design Pattern**: 
+#### **3.Behavioral Design Patterns**: 
 These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
   
 ## 🔹Best Practices for Implementing Design Patterns
