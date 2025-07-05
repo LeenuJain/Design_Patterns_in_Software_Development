@@ -46,10 +46,30 @@ There are **five main types**:
 ---
 
 #### **2.Structural Design Patterns**: 
-These patterns focus on how to compose objects into larger structures. They help you define relationships between objects.
+
+A **structural design pattern** helps you **organize and relate different classes and objects** to form **larger structures**—while keeping them **flexible and efficient**.
+They help:
+- Simplify **relationships between objects**
+- Ensure code is more **modular**, **reusable**, and **easy to change**
+- Help create structures **without tightly coupling** components
+
+Think of it like **building a house**:
+- You have bricks, beams, and pillars (your classes and objects).
+- Structural patterns show you **how to arrange** those pieces so the house is **solid and maintainable**.   
+
 **Types of Structural Design Patterns**
 There are **seven main types**:  
-![Creational Design Patterns](IMAGES/Structural_Images/Structural_Design_Patterns.webp)  
+![Creational Design Patterns](IMAGES/Structural_Images/Structural_Design_Patterns.webp)    
+
+| Pattern       | Description                                | Analogy                         |
+|---------------|--------------------------------------------|----------------------------------|
+| **Adapter**   | Connects incompatible interfaces            | Plug adapter                     |
+| **Bridge**    | Separates abstraction from implementation   | Remote control & TV              |
+| **Composite** | Treats individual objects and groups uniformly | Folders and files             |
+| **Decorator** | Adds behavior to objects dynamically        | Topping on ice cream             |
+| **Facade**    | Simplifies complex subsystems               | TV remote hiding internal electronics |
+| **Flyweight** | Reduces memory by sharing common parts      | Chess pieces on a board          |
+| **Proxy**     | Acts as a placeholder or controller         | Office receptionist filters visitors |
 
 ---
 
