@@ -15,10 +15,7 @@ Imagine you have an electric car that supports Type-C charging, but you only hav
 You use a charging adapter that:
 - Converts AC to DC
 - Fits the Type-C port   
-So:
-- Car expects Type-C interface
-- Wall Charger gives AC output
-- Adapter bridges this gap
+So adapter bridges this gap
 
 ---
 
