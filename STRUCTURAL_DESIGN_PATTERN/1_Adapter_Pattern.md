@@ -14,7 +14,7 @@ Think of it like a **translator** between two people who speak different languag
 Imagine you have an electric car that supports Type-C charging, but you only have a wall socket charger that outputs regular AC power.
 You use a charging adapter that:
 - Converts AC to DC
-- Fits the Type-C port
+- Fits the Type-C port   
 So:
 - Car expects Type-C interface
 - Wall Charger gives AC output
