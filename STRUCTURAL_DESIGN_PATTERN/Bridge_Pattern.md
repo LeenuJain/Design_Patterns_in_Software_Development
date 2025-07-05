@@ -104,13 +104,15 @@ Truck:
 Starting electric engine...
 ```
 
-## 🔷 Understanding "Abstraction" vs "Implementation" in the Bridge Pattern
+---
+
+## 🔹 Understanding "Abstraction" vs "Implementation" in the Bridge Pattern
 
 In the **Bridge Pattern**, the term **"Abstraction"** doesn't always mean an *abstract class*, and **"Implementation"** doesn't always mean an *interface* or *low-level code* in the traditional OOP sense.
 
 Let’s break this down clearly using the example we’ve been working with 👇
 
-#### 🔷 Abstraction
+#### 🔹 Abstraction
 
 - **Definition:** The high-level control layer or client-facing interface — what users interact with.
 - **In Code:** `Vehicle`, `Car`, `Truck`
@@ -132,7 +134,7 @@ class Vehicle:
 - But it **doesn’t care how the engine actually works**
 
 
-#### 🔶 Implementation
+#### 🔹 Implementation
 
 - **Definition:** The lower-level classes that actually do the work
 - **In Code:** `Engine`, `PetrolEngine`, `ElectricEngine`
@@ -150,12 +152,12 @@ class PetrolEngine(Engine):
 
 ---
 
-####  🔶 Putting It All Together
+####  🔹 Putting It All Together
 > “Let me connect the **abstraction layer** (like `Vehicle`) to the **implementation layer** (like `Engine`), so I can mix and match them without changing either side.”
 
 ---
 
-## 🔶 Summary Table
+## 🔹 Summary Table
 
 | **Term**         | **In Our Code**                            | **Responsibility**                                |
 |------------------|--------------------------------------------|---------------------------------------------------|
@@ -165,7 +167,7 @@ class PetrolEngine(Engine):
 
 ---
 
-## 🚫 Without the Bridge Pattern (Using Inheritance Only)
+## 🔹 Without the Bridge Pattern (Using Inheritance Only)
 
 If we didn’t use the **Bridge Pattern**, we'd likely rely on **inheritance** to combine engine types with vehicle types.  
 That means creating a new subclass for every combination, like:
@@ -177,6 +179,7 @@ That means creating a new subclass for every combination, like:
 
 This quickly leads to a bloated and rigid class hierarchy.
 
+## 🐍 Python Code Example
 ```python
 # Not using Bridge — Tight coupling via inheritance
 
@@ -211,7 +214,7 @@ car1.start()
 truck1.start()
 ```
 
-## ❌ Downsides (Without Bridge)
+## 🔹 Downsides (Without Bridge)
 
 | **Problem**         | **Why It Matters**                                                                 |
 |---------------------|-------------------------------------------------------------------------------------|
@@ -219,3 +222,7 @@ truck1.start()
 | ❌ Tight Coupling    | Vehicle and Engine logic are tied together — harder to manage or test independently |
 | ❌ Less Flexible     | Can't switch engine types at runtime — they're hardcoded in class names            |
 | ❌ Poor Reuse        | Can't reuse engine logic across vehicles — duplicated `print` code everywhere       |
+
+---
+
+
