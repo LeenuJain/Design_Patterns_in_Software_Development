@@ -45,15 +45,15 @@ Imagine you're doing grocery shopping.
 
 You buy individual items like:
 
-- 🔹 Milk  
-- 🔹 Bread  
-- 🔹 Cheese  
+- Milk  
+- Bread  
+- Cheese  
 
 You also buy a pack of fruits — a box containing:
 
-- 🔹 Apple  
-- 🔹 Banana  
-- 🔹 Grapes  
+- Apple  
+- Banana  
+- Grapes  
 
 Now you put everything into **one shopping bag**.
 
@@ -242,9 +242,9 @@ It provides a **clean, recursive structure** for working with **tree-like hierar
 
 ## 🔹 When Should You Use Composite?
 
-- 🔹 When your objects form **tree structures** (e.g., folders, UI components, car parts)
-- 🔹 When you want to perform an action on both **individual items and groups** using the **same interface**
-- 🔹 When you're tired of writing separate logic for `"if item is a group, do this..."` and want to **simplify your code**
+-  When your objects form **tree structures** (e.g., folders, UI components, car parts)
+-  When you want to perform an action on both **individual items and groups** using the **same interface**
+-  When you're tired of writing separate logic for `"if item is a group, do this..."` and want to **simplify your code**
 
 ---
 
