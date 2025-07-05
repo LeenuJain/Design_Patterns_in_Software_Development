@@ -45,7 +45,7 @@ There are **five main types**:
 
 ---
 
-#### 🔹 **2.Structural Design Patterns**: 
+#### 🔹 **2. Structural Design Patterns**: 
 
 A **structural design pattern** helps you **organize and relate different classes and objects** to form **larger structures**—while keeping them **flexible and efficient**.
 They help:
@@ -73,7 +73,7 @@ There are **seven main types**:
 
 ---
 
-#### 🔹**3.Behavioral Design Patterns**: 
+#### 🔹**3. Behavioral Design Patterns**: 
 These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
   
 ## 🔹Best Practices for Implementing Design Patterns
