@@ -22,7 +22,7 @@ Now if a mechanic wants to *“inspect a part”* or *“get weight of a part”
 - A single part (e.g., a **bolt**), or
 - A group of parts (e.g., the **engine**)
 
-✅ The mechanic should be able to call the **same method**, like `.get_weight()`, on **both**.
+The mechanic should be able to call the **same method**, like `.get_weight()`, on **both**.
 
 That’s the **Composite Pattern** in action.
 
