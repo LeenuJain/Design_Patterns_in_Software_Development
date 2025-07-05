@@ -37,54 +37,191 @@ Create a **common interface** for both:
 
 ---
 
-## 🐍 Python Code Example
+## 🔹Examples
+
+#### 🔹 Example 1: Grocery Shopping Bag
+
+Imagine you're doing grocery shopping.
+
+You buy individual items like:
+
+- 🔹 Milk  
+- 🔹 Bread  
+- 🔹 Cheese  
+
+You also buy a pack of fruits — a box containing:
+
+- 🔹 Apple  
+- 🔹 Banana  
+- 🔹 Grapes  
+
+Now you put everything into **one shopping bag**.
+
+- **Leaf nodes**: Milk, Bread, Cheese, Apple, Banana, Grapes  
+- **Composite node**: Fruit Pack (contains multiple items)  
+- **Another Composite**: Shopping Bag (contains both individual items and packs)
+
+**🐍 Python Code Example**
 ```python
-# Component Interface
-class CarComponent:
-    def show_details(self):
+# Base Component
+class Item:
+    def show(self):
         pass
 
-# Leaf Classes (individual parts)
-class Wheel(CarComponent):
-    def show_details(self):
-        print("Wheel")
+# Leaf items
+class Milk(Item):
+    def show(self):
+        print("Milk")
 
-class Engine(CarComponent):
-    def show_details(self):
-        print("Engine")
+class Bread(Item):
+    def show(self):
+        print("Bread")
 
-#  Composite Class (group of parts)
-class Car(CarComponent):
+class Cheese(Item):
+    def show(self):
+        print("Cheese")
+
+class Apple(Item):
+    def show(self):
+        print("Apple")
+
+class Banana(Item):
+    def show(self):
+        print("Banana")
+
+# Composite: Fruit Pack
+class FruitPack(Item):
     def __init__(self):
-        self.parts = []
+        self.fruits = []
 
-    def add_part(self, part: CarComponent):
-        self.parts.append(part)
+    def add(self, fruit: Item):
+        self.fruits.append(fruit)
 
-    def show_details(self):
-        print("Car parts:")
-        for part in self.parts:
-            part.show_details()
+    def show(self):
+        print("Fruit Pack:")
+        for fruit in self.fruits:
+            fruit.show()
+
+# Composite: Shopping Bag
+class ShoppingBag(Item):
+    def __init__(self):
+        self.items = []
+
+    def add(self, item: Item):
+        self.items.append(item)
+
+    def show(self):
+        print("Shopping Bag contains:")
+        for item in self.items:
+            item.show()
 
 # Usage
-wheel1 = Wheel()
-wheel2 = Wheel()
-engine = Engine()
+milk = Milk()
+bread = Bread()
+cheese = Cheese()
 
-my_car = Car()
-my_car.add_part(wheel1)
-my_car.add_part(wheel2)
-my_car.add_part(engine)
+fruit_pack = FruitPack()
+fruit_pack.add(Apple())
+fruit_pack.add(Banana())
 
-my_car.show_details()
+bag = ShoppingBag()
+bag.add(milk)
+bag.add(bread)
+bag.add(cheese)
+bag.add(fruit_pack)
+
+bag.show()
+```
+
+**Output:**
+Shopping Bag contains:
+Milk
+Bread
+Cheese
+Fruit Pack:
+Apple
+Banana
+
+So, when the cashier asks:
+
+> “Show me what’s in your bag.”
+
+You can just say:
+
+```python
+bag.show_items()
+```
+
+And whether it's a single item or a group (like the fruit pack), it’ll handle both uniformly. That’s Composite Pattern in real life!
+
+---
+
+#### 🔹 Example 2: File System (Folders & Files)
+
+This is the classic example of the **Composite Pattern**:
+
+- 🔹 **File** = Leaf  
+- 🔹 **Folder** = Composite (can contain files or other folders)
+
+When you call methods like `.open()` or `.get_size()` on a folder or a file, it works the **same way** — even though a folder might have **more content inside**.
+
+You can loop through MyDocuments.show_all() and not worry about what’s inside — it handles both files and folders the same way.
+
+**🐍 Python Code Example**
+```python
+# Base Component
+class FileSystemItem:
+    def show(self, indent=0):
+        pass
+
+# Leaf: File
+class File(FileSystemItem):
+    def __init__(self, name):
+        self.name = name
+
+    def show(self, indent=0):
+        print("  " * indent + f"📄 {self.name}")
+
+# Composite: Folder
+class Folder(FileSystemItem):
+    def __init__(self, name):
+        self.name = name
+        self.items = []
+
+    def add(self, item: FileSystemItem):
+        self.items.append(item)
+
+    def show(self, indent=0):
+        print("  " * indent + f"📁 {self.name}")
+        for item in self.items:
+            item.show(indent + 1)
+
+# Usage
+resume = File("resume.docx")
+cover_letter = File("coverletter.pdf")
+degree = File("degree.pdf")
+internship = File("internship.pdf")
+
+certificates = Folder("Certificates")
+certificates.add(degree)
+certificates.add(internship)
+
+my_documents = Folder("MyDocuments")
+my_documents.add(resume)
+my_documents.add(cover_letter)
+my_documents.add(certificates)
+
+my_documents.show()
 ```
 
 **Output:**
 ```python
-Car parts:
-Wheel
-Wheel
-Engine
+📁 MyDocuments
+  📄 resume.docx
+  📄 coverletter.pdf
+  📁 Certificates
+    📄 degree.pdf
+    📄 internship.pdf
 ```
 
 ---
@@ -96,4 +233,6 @@ Engine
 | ✅ **Uniformity**          | Treat individual and group objects the same                        |
 | ✅ **Scalability**         | Add/remove parts easily                                            |
 | ✅ **Hierarchical Structures** | Great for trees, folders, GUIs, car components, etc.            |
+
+---
 
