@@ -56,7 +56,7 @@ adapter = GPSAdapter(old_gps)
 car_system = NewCarSystem()
 lat, lon = adapter.get_lat_lon()
 car_system.display_location(lat, lon)
-'''
+```
 
 ### 🔹 Understanding the Adapter Pattern with the Car GPS Example
 
