@@ -60,7 +60,10 @@ car_system.display_location(lat, lon)
 
 ### 🔹 Understanding the Adapter Pattern with the Car GPS Example
 
-> The Adapter Pattern translates one interface into another so that classes can work together **without changing their existing code**.
+It is also defined as:  
+**“The Adapter Pattern translates one interface into another so that classes can work together without changing their existing code.”**
+
+The following example demonstrates how this definition applies in practice:
 
 To relate this definition to our example:
 
