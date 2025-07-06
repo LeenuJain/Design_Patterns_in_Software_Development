@@ -63,7 +63,7 @@ There are **seven main types**:
 
 ---
 
-## 🔹 Structural Design Patterns Summary
+**Structural Design Patterns Summary**
 
 | Pattern       | Description                                | Analogy                            | Notes Link                                                 |
 |---------------|--------------------------------------------|-------------------------------------|------------------------------------------------------------|
@@ -78,8 +78,40 @@ There are **seven main types**:
 ---
 
 #### 🔹**3. Behavioral Design Patterns**: 
-These patterns address object interaction and responsibility assignment. They define how objects communicate and collaborate.
-  
+Behavioral Design Patterns focus on how **objects communicate and interact** with one another to perform tasks, share responsibilities, and manage flow.
+If:
+Creational = how objects are created
+Structural = how objects are organized
+then
+Behavioral = how objects behave and collaborate
+They help:
+- Define clear responsibility and control flow
+- Simplify complex communication
+- Make systems more flexible and extensible
+
+**Types of Behavioural Design Patterns**
+There are **Ten main types**:  
+![Behavioural Design Patterns](IMAGES/Behavioural_Images/Behavioural_Design_Patterns.png)    
+
+**Behavioral Design Patterns Summary**
+
+| Pattern                  | Description                                                  | Analogy                                           |
+|--------------------------|--------------------------------------------------------------|---------------------------------------------------|
+| **1. Strategy**              | Selects an algorithm at runtime from a family of strategies  | Choosing a route on Google Maps                   |
+| **2. Observer**              | Notifies many objects when one object changes                | YouTube subscribers getting video alerts          |
+| **3. Command**               | Encapsulates a request as an object                          | Remote control buttons (undo, redo, play)         |
+| **4. State**                 | Changes object behavior based on its state                   | Traffic light switching between red/green         |
+| **5. Chain of Responsibility** | Passes request along a chain until someone handles it     | Customer support levels (agent → manager)         |
+| **6. Template Method**       | Defines the skeleton of an algorithm, lets subclasses customize | Cooking recipe steps with variations          |
+| **7. Iterator**              | Provides a way to access elements without exposing structure | Flipping through pages in a book                  |
+| **8. Mediator**              | Centralizes communication between objects                    | Air traffic controller between airplanes          |
+| **9. Memento**               | Captures and restores object state                           | Undo feature in a text editor                     |
+| **10. Interpreter**          | Implements a language grammar interpreter                    | Calculator interpreting math expressions          |
+| **11. Visitor**              | Adds operations to objects without modifying them            | HR doing audits on different employees            |
+
+
+---
+
 ## 🔹Best Practices for Implementing Design Patterns
 - **Understand the Problem Before Applying a Pattern** : It’s tempting to see a cool design pattern and want to use it everywhere. But first, take a step back and truly understand the problem you’re trying to solve. Choose a design pattern that fits the specific problem at hand.
 - **Keep it Simple** : Design patterns are meant to simplify code and make it more maintainable. If you find yourself adding complexity instead of reducing it, you might be over-engineering. Remember, the goal is to find elegant solutions, not create more problems.
