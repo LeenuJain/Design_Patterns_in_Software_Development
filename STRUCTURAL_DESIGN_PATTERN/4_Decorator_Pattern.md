@@ -98,6 +98,37 @@ Total Cost: ₹ 650
 
 ---
 
+## 🔹 Example 2: Online Shopping — Gift Wrap / Delivery Options
+
+### Scenario
+
+You buy a product online.  
+You can:
+
+- Add gift wrap  
+- Add fast delivery  
+- Add personalized message  
+
+Each of these is a **decorator** that wraps the original product without changing the base product.
+
+---
+
+### Python Code
+
+```python
+product = Product("Book", 500)
+gifted = GiftWrap(product)
+fast = ExpressDelivery(gifted)
+```
+
+**You can now:**
+```python
+print(f"Description: {fast.get_description()}")
+print(f"Total Cost: ₹{fast.get_cost()}")
+```
+
+---
+
 # 🔹 Python Decorator vs Decorator Pattern
 
 The term **"decorator"** in Python can refer to **two different concepts**:
