@@ -98,8 +98,6 @@ Total Cost: ₹ 650
 
 ---
 
-# ---
-
 # 🔹 Python Decorator vs Decorator Pattern
 
 The term **"decorator"** in Python can refer to **two different concepts**:
@@ -166,5 +164,44 @@ Because:
 - Use Python decorators (`@`) when you're decorating functions.
 - Use the Decorator Design Pattern when you're decorating objects/classes.
 - They’re conceptually similar, but technically different tools.
+
+---
+
+---
+
+# 🔹 Decorator vs Adapter
+
+| Feature             | Decorator Pattern                          | Adapter Pattern                                         |
+|---------------------|---------------------------------------------|---------------------------------------------------------|
+| Goal                | Add new behavior to an object               | Convert an interface so two classes can work together   |
+| Focus               | Behavior extension                          | Interface compatibility                                 |
+| Structure           | Many decorators can be stacked (layered)    | One-time adapter between incompatible systems           |
+| Example             | Add wax & polish to a car wash              | Convert `get_coordinates()` → `get_lat_lon()`           |
+| Same Interface?     | Yes (to extend behavior)                    | Yes (to match expected format)                          |
+| Modifies Behavior?  | Yes (adds features like logging, new logic) | No (just adapts method calls/data structure)            |
+
+---
+
+---
+Looking at the above python example 
+```python
+service = WaxCoating(BasicWash())
+```
+**Is It a Decorator or an Adapter?**
+Looks like Adapter, right?
+
+But ask yourself:
+**❓ Am I translating `BasicWash` into a compatible format for `WaxCoating`?**  
+Or am I just **adding more features** (like extra service charges or description)?
+
+✅ In this case, you’re adding features — `WaxCoating` is **not expecting a different interface** — it's just **decorating an existing one**.
+So it’s a **Decorator**, not an Adapter.
+
+---
+
+## 🔹 Key Trick to Distinguish
+
+- If you're making two classes work together **because their interfaces don’t match** → **Adapter**
+- If you're **enhancing or extending an object’s behavior without changing it** → **Decorator**
 
 ---
