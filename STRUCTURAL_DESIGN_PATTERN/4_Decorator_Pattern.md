@@ -198,8 +198,6 @@ Because:
 
 ---
 
----
-
 # 🔹 Decorator vs Adapter
 
 | Feature             | Decorator Pattern                          | Adapter Pattern                                         |
@@ -213,7 +211,6 @@ Because:
 
 ---
 
----
 Looking at the above python example 
 ```python
 service = WaxCoating(BasicWash())
