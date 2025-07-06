@@ -1,6 +1,6 @@
 # 🔹 Flyweight Design Pattern
 
-## 🔹 What is Flyweight Design Pattern?
+## 🔹 What is it?
 
 The **Flyweight Pattern** is used to **minimize memory usage** by sharing **common data** between multiple similar objects instead of creating duplicates.
 
