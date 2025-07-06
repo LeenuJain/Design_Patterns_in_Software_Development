@@ -61,15 +61,19 @@ Think of it like **building a house**:
 There are **seven main types**:  
 ![Creational Design Patterns](IMAGES/Structural_Images/Structural_Design_Patterns.webp)    
 
-| Pattern       | Description                                | Analogy                         |
-|---------------|--------------------------------------------|----------------------------------|
-| **Adapter**   | Connects incompatible interfaces            | Plug adapter                     |
-| **Bridge**    | Separates abstraction from implementation   | Remote control & TV              |
-| **Composite** | Treats individual objects and groups uniformly | Folders and files             |
-| **Decorator** | Adds behavior to objects dynamically        | Topping on ice cream             |
-| **Facade**    | Simplifies complex subsystems               | TV remote hiding internal electronics |
-| **Flyweight** | Reduces memory by sharing common parts      | Chess pieces on a board          |
-| **Proxy**     | Acts as a placeholder or controller         | Office receptionist filters visitors |
+---
+
+## 🔹 Structural Design Patterns Summary
+
+| Pattern       | Description                                | Analogy                            | Notes Link                                                 |
+|---------------|--------------------------------------------|-------------------------------------|------------------------------------------------------------|
+| **1. Adapter**   | Connects incompatible interfaces            | Plug adapter                        | [View_notes_for_Adapter_Pattern](STRUCTURAL_DESIGN_PATTERNS/1_Adapter_Pattern.md)         |
+| **2. Bridge**     | Separates abstraction from implementation   | Remote control & TV                 | [View_notes_for_Bridge_Pattern](STRUCTURAL_DESIGN_PATTERNS/2_Bridge_Pattern.md)          |
+| **3. Composite**  | Treats individual objects and groups uniformly | Folders and files                | [View_notes_for_Composite_Pattern.](STRUCTURAL_DESIGN_PATTERNS/3_Composite_Pattern.md)     |
+| **4. Decorator**  | Adds behavior to objects dynamically        | Topping on ice cream                | [View_notes_for_Decorator_Pattern](STRUCTURAL_DESIGN_PATTERNS/4_Decorator_Pattern.md)     |
+| **5. Facade**     | Simplifies complex subsystems               | TV remote hiding internal electronics | [View_notes_for_Facade_Pattern](STRUCTURAL_DESIGN_PATTERNS/5_Facade_Pattern.md)          |
+| **6. Proxy**      | Acts as a placeholder or controller         | Office receptionist filters visitors | [View_notes_for_Proxy_Pattern](STRUCTURAL_DESIGN_PATTERNS/6_Proxy_Pattern.md)            |
+| **7. Flyweigh**t  | Reduces memory by sharing common parts      | Chess pieces on a board             | [View_notes_for_Flyweight_Pattern](STRUCTURAL_DESIGN_PATTERNS/7_Flyweight_Pattern.md)     |
 
 ---
 
