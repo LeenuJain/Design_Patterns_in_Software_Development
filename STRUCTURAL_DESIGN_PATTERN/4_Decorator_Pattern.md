@@ -98,6 +98,17 @@ Total Cost: ₹ 650
 
 ---
 
+**Summary**
+
+| Concept              | Role                          |
+|----------------------|-------------------------------|
+| Component            | CarService                    |
+| Concrete Component   | BasicWash                     |
+| Decorators           | WaxCoating, InteriorCleaning  |
+| Goal                 | Add functionality without changing existing code |
+
+---
+
 ## 🔹 Example 2: Online Shopping — Gift Wrap / Delivery Options
 
 ### Scenario
