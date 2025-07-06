@@ -133,15 +133,11 @@ print(f"Total Cost: ₹{fast.get_cost()}")
 
 The term **"decorator"** in Python can refer to **two different concepts**:
 
----
-
 #### 🔹 1. Design Pattern: Decorator Pattern
 
 - The one you're learning now — a **Structural Design Pattern**
 - It’s **language-agnostic** (used in Java, C++, etc.)
 - It involves **wrapping objects** at runtime to **add behavior**
-
----
 
 #### 🔹 2. Python’s `@decorator` Syntax
 
@@ -181,9 +177,7 @@ But they are used in **different ways**:
 
 ### 🔹 Can We Use Python’s `@decorator` for the Decorator Pattern?
 
-- **Not directly.**
-
-Because:
+**Not directly,** Because:
 
 - Python decorators (`@`) work on **functions or methods** — not on objects
 - But if your goal is to **decorate behavior**, Python decorators can **simulate similar behavior** — at the **function level**
