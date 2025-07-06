@@ -96,8 +96,6 @@ Service: Basic Car Wash, Wax Coating, Interior Cleaning
 Total Cost: ₹ 650
 ```
 
----
-
 **Summary**
 
 | Concept              | Role                          |
