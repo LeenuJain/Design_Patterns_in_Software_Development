@@ -2,7 +2,7 @@
 
 ## 🔹 What is the Bridge Design Pattern?
 
-The **Bridge Pattern** is used to *decouple an abstraction from its implementation*, so that the two can vary independently.
+The **Bridge Pattern** is used to **decouple an abstraction from its implementation**, so that the two can vary independently.
 
 In simple terms:
 
