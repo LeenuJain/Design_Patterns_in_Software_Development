@@ -14,7 +14,7 @@ Think of a furniture manufacturer that makes both modern and vintage furniture:
 
 ---
 
-## 🔹 Why Use Singleton?
+## 🔹 Why use Abstract Factory?
 
 - When your system needs to be independent of how its products are created
 - When you need to create families of related products that should be used together
