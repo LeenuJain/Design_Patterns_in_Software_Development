@@ -94,10 +94,8 @@ class Dialog:
         pass
 
     def create_and_display_button(self, color, size, shape, text):
-        print("\n🔧 create_and_display_button() called")
         print("→ Creating button using factory...")
         button = self.create_button()
-        print(f"✔ Got button of type: {type(button).__name__}")
 
         print("→ Customizing button using builder...")
         builder = ButtonBuilder(button)
