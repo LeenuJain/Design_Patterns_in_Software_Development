@@ -25,7 +25,7 @@ Design patterns are typically grouped into three main categories. These categori
 
 #### 🔹 **1. Creational Design Patterns:**  
 
-These patterns deal with object creation mechanisms. They help you create objects in a flexible and controlled way.
+These patterns deal with **object creation mechanisms**. They help you create objects in a flexible and controlled way.
 They help:
 - Hide the **creation logic**
 - Increase **flexibility** and **reuse**
