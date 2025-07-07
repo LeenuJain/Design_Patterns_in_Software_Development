@@ -78,16 +78,16 @@ There are **seven main types**:
 ---
 
 #### 🔹**3. Behavioral Design Patterns**: 
-Behavioral Design Patterns focus on how **objects communicate and interact** with one another to perform tasks, share responsibilities, and manage flow.
-If:
-Creational = how objects are created
-Structural = how objects are organized
-then
-Behavioral = how objects behave and collaborate
-They help:
-- Define clear responsibility and control flow
-- Simplify complex communication
-- Make systems more flexible and extensible
+Behavioral Design Patterns focus on how **objects communicate and interact** with one another to perform tasks, share responsibilities, and manage flow.   
+If:    
+Creational = how objects are created    
+Structural = how objects are organized    
+then   
+Behavioral = how objects behave and collaborate  
+They help:  
+- Define clear responsibility and control flow  
+- Simplify complex communication  
+- Make systems more flexible and extensible  
 
 **Types of Behavioural Design Patterns**
 There are **Ten main types**:  
