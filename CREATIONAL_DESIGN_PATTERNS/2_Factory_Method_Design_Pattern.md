@@ -188,8 +188,7 @@ Address: 123 Example St, San Francisco, CA
 - When a class can't anticipate the type of objects it needs to create
 - When you want subclasses to specify the objects they create
 - When you need to delegate responsibility to helper subclasses
-- When you want to work with families of related products
-
+- 
 ---
 
 ## 🔹 Real-World Applications
