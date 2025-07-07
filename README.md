@@ -65,9 +65,9 @@ There are **seven main types**:
 
 **Structural Design Patterns Summary**
 
-| Pattern       | Description                                | Analogy                            | Notes Link                                                 |
-|---------------|--------------------------------------------|-------------------------------------|------------------------------------------------------------|
-| **1. Adapter**   | Connects incompatible interfaces            | Plug adapter                        | [View_notes_for_Adapter_Pattern](STRUCTURAL_DESIGN_PATTERNS/1_Adapter_Pattern.md)         |
+| Pattern           | Description                                | Analogy                            | Notes Link                                                 |
+|-------------------|--------------------------------------------|-------------------------------------|------------------------------------------------------------|
+| **1. Adapter**    | Connects incompatible interfaces            | Plug adapter                        | [View_notes_for_Adapter_Pattern](STRUCTURAL_DESIGN_PATTERNS/1_Adapter_Pattern.md)         |
 | **2. Bridge**     | Separates abstraction from implementation   | Remote control & TV                 | [View_notes_for_Bridge_Pattern](STRUCTURAL_DESIGN_PATTERNS/2_Bridge_Pattern.md)          |
 | **3. Composite**  | Treats individual objects and groups uniformly | Folders and files                | [View_notes_for_Composite_Pattern.](STRUCTURAL_DESIGN_PATTERNS/3_Composite_Pattern.md)     |
 | **4. Decorator**  | Adds behavior to objects dynamically        | Topping on ice cream                | [View_notes_for_Decorator_Pattern](STRUCTURAL_DESIGN_PATTERNS/4_Decorator_Pattern.md)     |
