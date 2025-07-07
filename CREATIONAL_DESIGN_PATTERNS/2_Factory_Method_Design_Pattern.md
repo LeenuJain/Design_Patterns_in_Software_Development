@@ -20,15 +20,12 @@ The **pizza store** is the **factory**, and the **pizza** is the **product**.
 ### 1. Encapsulation of Object Creation
 - You hide the logic of how objects are created.
 - The client code doesn't need to know the exact class name or how to instantiate it.
-
 ### 2. Loose Coupling
 - The client code depends on an interface or abstract class, not on specific implementations.
 - This makes your code easier to change or extend.
-
 ### 3. Easier to Add New Types
 - You can add new product types (e.g., new notification types) without changing existing code.
 - This follows the Open/Closed Principle — open for extension, closed for modification.
-
 ### 4. Improved Maintainability
 - Centralizes object creation logic in one place (the factory).
 - Makes the codebase cleaner and easier to manage.
@@ -184,14 +181,6 @@ Address: 123 Example St, San Francisco, CA
 - **Testing Simplified**: You can create mock location services for testing.  
 - **Feature Consistency**: All location services implement the same interface, ensuring consistent functionality.  
 - **Configuration Flexibility**: You can determine which service to use at runtime based on user preferences, availability, or cost considerations.  
-
----
-
-## 🔹why use Factory Method?
-- **Decouples Object Creation** : It separates the client code from the concrete implementation details, allowing you to create objects without specifying their exact class.
-- **Flexibility and Extensibility**: Makes adding new product types easier without changing existing code (adhering to the Open/Closed Principle).
-- **Centralized Creation Logic**: Consolidates complex object creation logic in one place, making the code more maintainable.
-- **Consistent Object Creation**: Ensures objects are created in a standardized way with proper initialization.
 
 ---
 
